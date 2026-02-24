@@ -1,17 +1,2 @@
-# Ignore system files
-__pycache__/
-*.pyc
-*.pyo
-.DS_Store
-
-# Ignore virtual environments
-venv/
-env/
-
-
-# Ignore sensitive config files
-config.json
-.env
-
-# Ignore Streamlit cache
-.streamlit/
+# Created by venv; see https://docs.python.org/3/library/venv.html
+*
