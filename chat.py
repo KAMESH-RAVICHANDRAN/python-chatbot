@@ -100,7 +100,7 @@ def translate_text(text, dest_language='en'):
         return text
 
 # Streamlit UI
-st.title("Medical Chatbot 🤖")
+st.title("Medical Chatbot BY AJ STUDIOZ")
 user_input = st.text_input("Ask a question:")
 
 # Language selection
