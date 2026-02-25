@@ -5,6 +5,22 @@ from sentence_transformers import SentenceTransformer, util
 from deep_translator import GoogleTranslator
 import torch
 
+# Page config - must be the FIRST streamlit command
+st.set_page_config(
+    page_title="Medical Chatbot BY AJ STUDIOZ",
+    page_icon="🩺",
+    layout="centered",
+)
+
+# Hide Streamlit toolbar (Share, star, edit, GitHub, three-dots menu)
+st.markdown("""
+    <style>
+        [data-testid="stToolbar"] { display: none !important; }
+        [data-testid="stDecoration"] { display: none !important; }
+        footer { display: none !important; }
+    </style>
+""", unsafe_allow_html=True)
+
 # Load your data
 df = pd.read_csv('dataset - Sheet1.csv')  # Fixed path
 
